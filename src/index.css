@@ -4,12 +4,35 @@
 
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
+Corporate HR theme with professional blues and clean aesthetics.
 */
 
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 215 25% 27%;
+    
+    /* Corporate color palette */
+    --corporate-blue: 220 85% 35%;
+    --corporate-blue-light: 220 75% 45%;
+    --corporate-blue-dark: 220 95% 25%;
+    --corporate-accent: 210 75% 50%;
+    --corporate-grey: 215 15% 95%;
+    --corporate-grey-dark: 215 25% 27%;
+    
+    /* Design system gradients */
+    --gradient-corporate: linear-gradient(135deg, hsl(var(--corporate-blue)), hsl(var(--corporate-blue-light)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--corporate-blue-dark) / 0.9), hsl(var(--corporate-blue) / 0.8));
+    --gradient-section: linear-gradient(180deg, hsl(var(--corporate-grey)), hsl(var(--background)));
+    
+    /* Shadows */
+    --shadow-corporate: 0 10px 40px -10px hsl(var(--corporate-blue) / 0.3);
+    --shadow-card: 0 4px 20px -5px hsl(var(--corporate-blue) / 0.15);
+    --shadow-elegant: 0 8px 30px -8px hsl(var(--corporate-blue) / 0.2);
+    
+    /* Animations */
+    --transition-corporate: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.3s ease-out;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -17,11 +40,11 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: var(--corporate-blue);
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: var(--corporate-grey);
+    --secondary-foreground: var(--corporate-grey-dark);
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
