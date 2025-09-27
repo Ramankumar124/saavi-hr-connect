@@ -34,20 +34,8 @@ const ServicesSection = () => {
       features: ["PF Management", "ESI Processing", "Professional Tax", "Labour Welfare Fund"],
       color: "corporate-blue-light"
     },
-    {
-      icon: GraduationCap,
-      title: "Training & Development",
-      description: "Skill enhancement and professional development programs for workforce optimization.",
-      features: ["Skill Training", "Leadership Development", "Soft Skills", "Technical Training"],
-      color: "corporate-blue"
-    },
-    {
-      icon: Scale,
-      title: "Labour Law Consultancy",
-      description: "Expert guidance on labour laws, regulations, and best practices for compliance.",
-      features: ["Legal Consultation", "Policy Development", "Compliance Audit", "Documentation"],
-      color: "corporate-accent"
-    },
+   
+  
     {
       icon: ClipboardCheck,
       title: "Vendor Audit & Inspections",
@@ -55,20 +43,6 @@ const ServicesSection = () => {
       features: ["Vendor Assessment", "Quality Audits", "Compliance Check", "Risk Evaluation"],
       color: "corporate-blue-light"
     },
-    {
-      icon: Banknote,
-      title: "Government Remittance",
-      description: "Streamlined government remittance support for all statutory obligations.",
-      features: ["Online Filing", "Payment Processing", "Document Management", "Deadline Tracking"],
-      color: "corporate-blue"
-    },
-    {
-      icon: Users,
-      title: "HR Consulting",
-      description: "Strategic HR consulting to optimize your human resource management practices.",
-      features: ["HR Strategy", "Process Optimization", "Policy Design", "Change Management"],
-      color: "corporate-accent"
-    }
   ];
 
   const getColorClasses = (color: string) => {

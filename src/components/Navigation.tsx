@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, Mail } from "lucide-react";
+import Logo from "./Logo";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,25 +11,15 @@ const Navigation = () => {
     { name: "About", href: "#about" },
     { name: "Services", href: "#services" },
     { name: "Clients", href: "#clients" },
-    { name: "Testimonials", href: "#testimonials" },
-    { name: "Presence", href: "#presence" },
-    { name: "Contact", href: "#contact" }
+    { name: "Contact", href: "#contact" },
   ];
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
+      <div className="max-w-7xl mx-auto ">
+        <div className="flex justify-between items-center">
           {/* Logo */}
-          <div className="flex items-center">
-            <div className="w-12 h-12 bg-corporate-blue rounded-lg flex items-center justify-center mr-3">
-              <span className="text-white font-bold text-xl">S</span>
-            </div>
-            <div>
-              <h1 className="text-xl font-bold text-corporate-grey-dark">Saavi HR</h1>
-              <p className="text-sm text-gray-600">Business Solutions</p>
-            </div>
-          </div>
+          <Logo size="md" showText={true} />
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
@@ -43,30 +34,17 @@ const Navigation = () => {
             ))}
           </div>
 
-          {/* Contact Info & CTA */}
-          <div className="hidden lg:flex items-center space-x-4">
-            <div className="flex items-center space-x-4 text-sm text-gray-600 border-r border-gray-300 pr-4">
-              <div className="flex items-center">
-                <Phone className="h-4 w-4 mr-1" />
-                <span>+91 172 XXX XXXX</span>
-              </div>
-              <div className="flex items-center">
-                <Mail className="h-4 w-4 mr-1" />
-                <span>info@saavihr.com</span>
-              </div>
-            </div>
-            <Button variant="corporate" size="sm">
-              Get Quote
-            </Button>
-          </div>
-
           {/* Mobile Menu Button */}
           <div className="lg:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="p-2 text-gray-700 hover:text-corporate-blue transition-colors"
             >
-              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isMenuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </button>
           </div>
         </div>
@@ -89,11 +67,11 @@ const Navigation = () => {
                 <div className="space-y-2 text-sm text-gray-600 mb-4">
                   <div className="flex items-center">
                     <Phone className="h-4 w-4 mr-2" />
-                    <span>+91 172 XXX XXXX</span>
+                    <span>+91 172 451 3879</span>
                   </div>
                   <div className="flex items-center">
                     <Mail className="h-4 w-4 mr-2" />
-                    <span>info@saavihr.com</span>
+                    <span>Business@saavihr.com</span>
                   </div>
                 </div>
                 <Button variant="corporate" size="sm" className="w-full">

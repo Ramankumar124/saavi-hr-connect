@@ -27,7 +27,7 @@ const AboutSection = () => {
                 <h3 className="text-2xl font-bold text-corporate-grey-dark">Our Mission</h3>
               </div>
               <p className="text-lg text-gray-600 leading-relaxed">
-                To achieve a <span className="font-semibold text-corporate-blue">15,000+ associate base by 2025</span>, 
+                To achieve a <span className="font-semibold text-corporate-blue">5000+ Manpower base by 2025</span>, 
                 providing comprehensive HR solutions that empower businesses to focus on their core competencies 
                 while we handle their workforce management needs with excellence and innovation.
               </p>
@@ -57,7 +57,7 @@ const AboutSection = () => {
             <div className="p-4 bg-corporate-blue/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
               <Users className="h-10 w-10 text-corporate-blue" />
             </div>
-            <h4 className="text-2xl font-bold text-corporate-grey-dark mb-2">10,000+</h4>
+            <h4 className="text-2xl font-bold text-corporate-grey-dark mb-2">2000+</h4>
             <p className="text-gray-600">Employees Placed Across India</p>
           </div>
 
@@ -74,32 +74,13 @@ const AboutSection = () => {
               <Target className="h-10 w-10 text-corporate-blue-light" />
             </div>
             <h4 className="text-2xl font-bold text-corporate-grey-dark mb-2">2025 Goal</h4>
-            <p className="text-gray-600">15,000+ Associates Target</p>
+            <p className="text-gray-600">5000+ Manpower Target</p>
           </div>
         </div>
 
         {/* Management Section */}
         <Card className="bg-gradient-to-r from-corporate-blue/5 to-corporate-accent/5">
-          <CardContent className="p-8">
-            <h3 className="text-3xl font-bold text-corporate-grey-dark mb-6 text-center">Leadership Excellence</h3>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="text-center">
-                <div className="w-24 h-24 bg-corporate-blue/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-corporate-blue">RK</span>
-                </div>
-                <h4 className="text-xl font-bold text-corporate-grey-dark mb-2">Ravinder Kumar</h4>
-                <p className="text-gray-600">Co-Founder & Strategic Leader</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="w-24 h-24 bg-corporate-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-corporate-accent">JK</span>
-                </div>
-                <h4 className="text-xl font-bold text-corporate-grey-dark mb-2">Jitendar Kumar</h4>
-                <p className="text-gray-600">Co-Founder & Operations Head</p>
-              </div>
-            </div>
-          </CardContent>
+   
         </Card>
       </div>
     </section>

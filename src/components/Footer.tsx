@@ -1,4 +1,12 @@
-import { MapPin, Phone, Mail, Clock, Linkedin, Twitter, Facebook } from "lucide-react";
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Clock,
+  Linkedin,
+  Twitter,
+  Facebook,
+} from "lucide-react";
 
 const Footer = () => {
   return (
@@ -18,17 +26,27 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-300 leading-relaxed">
-              India's fastest growing HR solutions partner, empowering businesses 
-              with comprehensive workforce management and recruitment excellence.
+              India's fastest growing HR solutions partner, empowering
+              businesses with comprehensive workforce management and recruitment
+              excellence.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="p-2 bg-corporate-blue/20 rounded-lg hover:bg-corporate-blue transition-colors">
+              <a
+                href="#"
+                className="p-2 bg-corporate-blue/20 rounded-lg hover:bg-corporate-blue transition-colors"
+              >
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="#" className="p-2 bg-corporate-blue/20 rounded-lg hover:bg-corporate-blue transition-colors">
+              <a
+                href="#"
+                className="p-2 bg-corporate-blue/20 rounded-lg hover:bg-corporate-blue transition-colors"
+              >
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" className="p-2 bg-corporate-blue/20 rounded-lg hover:bg-corporate-blue transition-colors">
+              <a
+                href="#"
+                className="p-2 bg-corporate-blue/20 rounded-lg hover:bg-corporate-blue transition-colors"
+              >
                 <Facebook className="h-5 w-5" />
               </a>
             </div>
@@ -38,12 +56,47 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-bold mb-6">Quick Links</h4>
             <ul className="space-y-3">
-              <li><a href="#about" className="text-gray-300 hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#services" className="text-gray-300 hover:text-white transition-colors">Our Services</a></li>
-              <li><a href="#clients" className="text-gray-300 hover:text-white transition-colors">Our Clients</a></li>
-              <li><a href="#testimonials" className="text-gray-300 hover:text-white transition-colors">Testimonials</a></li>
-              <li><a href="#presence" className="text-gray-300 hover:text-white transition-colors">Global Presence</a></li>
-              <li><a href="#contact" className="text-gray-300 hover:text-white transition-colors">Contact Us</a></li>
+              <li>
+                <a
+                  href="#about"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Our Services
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#clients"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Our Clients
+                </a>
+              </li>
+          
+              <li>
+                <a
+                  href="#presence"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Global Presence
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Contact Us
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -51,12 +104,54 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-bold mb-6">Our Services</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Recruitment Services</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Payroll Outsourcing</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Statutory Compliance</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Training & Development</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">HR Consulting</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Vendor Audits</a></li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Recruitment Services
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Payroll Outsourcing
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Statutory Compliance
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Training & Development
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  HR Consulting
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Vendor Audits
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -68,21 +163,25 @@ const Footer = () => {
                 <MapPin className="h-5 w-5 text-corporate-blue mr-3 mt-1 flex-shrink-0" />
                 <div>
                   <p className="font-medium">Headquarters</p>
-                  <p className="text-gray-300 text-sm">Plot No. 123, Phase 8B<br />Mohali, Punjab - 160055</p>
+                  <p className="text-gray-300 text-sm">
+                    Plot No. 123, Phase 8B
+                    <br />
+                    Phase VIII-B, Industrial Area, Mohali, Punjab, 160055
+                  </p>
                 </div>
               </div>
               <div className="flex items-center">
                 <Phone className="h-5 w-5 text-corporate-blue mr-3" />
                 <div>
                   <p className="font-medium">Phone</p>
-                  <p className="text-gray-300 text-sm">+91 172 XXX XXXX</p>
+                  <p className="text-gray-300 text-sm">+91 172 451 3879</p>
                 </div>
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-corporate-blue mr-3" />
                 <div>
                   <p className="font-medium">Email</p>
-                  <p className="text-gray-300 text-sm">info@saavihr.com</p>
+                  <p className="text-gray-300 text-sm">Business@saavihr.com</p>
                 </div>
               </div>
               <div className="flex items-center">
@@ -105,10 +204,30 @@ const Footer = () => {
               © 2024 Saavi HR Business Solutions Pvt. Ltd. All rights reserved.
             </div>
             <div className="flex flex-wrap justify-center md:justify-end space-x-6 text-sm">
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">Privacy Policy</a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">Terms of Service</a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">Cookie Policy</a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">Sitemap</a>
+              <a
+                href="#"
+                className="text-gray-300 hover:text-white transition-colors"
+              >
+                Privacy Policy
+              </a>
+              <a
+                href="#"
+                className="text-gray-300 hover:text-white transition-colors"
+              >
+                Terms of Service
+              </a>
+              <a
+                href="#"
+                className="text-gray-300 hover:text-white transition-colors"
+              >
+                Cookie Policy
+              </a>
+              <a
+                href="#"
+                className="text-gray-300 hover:text-white transition-colors"
+              >
+                Sitemap
+              </a>
             </div>
           </div>
         </div>

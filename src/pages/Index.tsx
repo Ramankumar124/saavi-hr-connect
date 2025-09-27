@@ -27,9 +27,7 @@ const Index = () => {
         <section id="clients">
           <ClienteleSection />
         </section>
-        <section id="testimonials">
-          <TestimonialsSection />
-        </section>
+   
         <section id="presence">
           <GlobalPresenceSection />
         </section>

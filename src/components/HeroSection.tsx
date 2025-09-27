@@ -10,14 +10,14 @@ const HeroSection = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-corporate-blue-dark/90 via-corporate-blue/80 to-corporate-blue-light/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-corporate-blue-dark/40 via-corporate-blue/ to-corporate-blue-light/40"></div>
       </div>
       
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in-up">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            India's Fastest Growing
+            India’s Next-Gen
             <span className="block bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">
               HR Solutions Partner
             </span>
@@ -32,11 +32,11 @@ const HeroSection = () => {
           <div className="flex flex-wrap justify-center gap-8 mb-10 text-white">
             <div className="flex items-center gap-2 animate-slide-in-right" style={{animationDelay: '0.2s'}}>
               <Users className="h-6 w-6 text-yellow-400" />
-              <span className="text-lg font-semibold">10,000+ Employees Placed</span>
+              <span className="text-lg font-semibold">2000+ Employees Placed</span>
             </div>
             <div className="flex items-center gap-2 animate-slide-in-right" style={{animationDelay: '0.4s'}}>
               <TrendingUp className="h-6 w-6 text-yellow-400" />
-              <span className="text-lg font-semibold">Target: 15,000+ by 2025</span>
+              <span className="text-lg font-semibold">Target: 5000+ by 2025</span>
             </div>
             <div className="flex items-center gap-2 animate-slide-in-right" style={{animationDelay: '0.6s'}}>
               <MapPin className="h-6 w-6 text-yellow-400" />

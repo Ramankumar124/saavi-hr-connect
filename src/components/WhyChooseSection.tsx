@@ -8,25 +8,12 @@ const WhyChooseSection = () => {
       title: "Grassroot Industry Understanding",
       description: "Deep insights into various industries with hands-on experience across sectors, ensuring solutions that truly fit your business needs."
     },
-    {
-      icon: TrendingUp,
-      title: "Strong Financial Background",
-      description: "Robust financial foundation ensuring stability, reliability, and long-term partnership for your business growth."
-    },
-    {
-      icon: Smartphone,
-      title: "Digital Attendance Tracking",
-      description: "Advanced biometric and mobile app-based attendance systems for accurate workforce monitoring and management."
-    },
+ 
+  
     {
       icon: CheckCircle,
       title: "Transparent Process",
       description: "Fully digitized and transparent processes ensuring complete visibility and accountability in all operations."
-    },
-    {
-      icon: DollarSign,
-      title: "Cost-Efficient Solutions",
-      description: "Optimized pricing models that deliver maximum value while reducing your operational costs significantly."
     },
     {
       icon: Shield,
@@ -71,63 +58,9 @@ const WhyChooseSection = () => {
           ))}
         </div>
 
-        {/* Technology Highlight */}
-        <div className="bg-gradient-to-r from-corporate-blue to-corporate-blue-light rounded-2xl p-8 md:p-12 text-white">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <h3 className="text-3xl font-bold mb-6">Advanced Technology Integration</h3>
-              <div className="space-y-4">
-                <div className="flex items-center">
-                  <CheckCircle className="h-6 w-6 text-yellow-400 mr-3 flex-shrink-0" />
-                  <span className="text-lg">Biometric attendance systems</span>
-                </div>
-                <div className="flex items-center">
-                  <CheckCircle className="h-6 w-6 text-yellow-400 mr-3 flex-shrink-0" />
-                  <span className="text-lg">Mobile app-based tracking</span>
-                </div>
-                <div className="flex items-center">
-                  <CheckCircle className="h-6 w-6 text-yellow-400 mr-3 flex-shrink-0" />
-                  <span className="text-lg">Real-time dashboard monitoring</span>
-                </div>
-                <div className="flex items-center">
-                  <CheckCircle className="h-6 w-6 text-yellow-400 mr-3 flex-shrink-0" />
-                  <span className="text-lg">Automated compliance reporting</span>
-                </div>
-                <div className="flex items-center">
-                  <CheckCircle className="h-6 w-6 text-yellow-400 mr-3 flex-shrink-0" />
-                  <span className="text-lg">Digital payroll processing</span>
-                </div>
-              </div>
-            </div>
-            <div className="text-center md:text-right">
-              <div className="inline-block p-8 bg-white/10 rounded-2xl backdrop-blur-sm">
-                <Smartphone className="h-24 w-24 text-yellow-400 mx-auto mb-4" />
-                <h4 className="text-xl font-bold mb-2">Smart Solutions</h4>
-                <p className="text-white/90">Technology-driven HR management for the modern workplace</p>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        {/* Stats Section */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16">
-          <div className="text-center">
-            <div className="text-4xl font-bold text-corporate-blue mb-2">99.9%</div>
-            <div className="text-gray-600">Accuracy Rate</div>
-          </div>
-          <div className="text-center">
-            <div className="text-4xl font-bold text-corporate-accent mb-2">24/7</div>
-            <div className="text-gray-600">Support Available</div>
-          </div>
-          <div className="text-center">
-            <div className="text-4xl font-bold text-corporate-blue-light mb-2">100%</div>
-            <div className="text-gray-600">Compliance</div>
-          </div>
-          <div className="text-center">
-            <div className="text-4xl font-bold text-corporate-blue mb-2">10K+</div>
-            <div className="text-gray-600">Happy Employees</div>
-          </div>
-        </div>
+
+  
       </div>
     </section>
   );
