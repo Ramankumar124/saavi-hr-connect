@@ -5,7 +5,7 @@ const WhyChooseSection = () => {
   const advantages = [
     {
       icon: Users,
-      title: "Grassroot Industry Understanding",
+      title: "Grassroot Industrial Understanding",
       description: "Deep insights into various industries with hands-on experience across sectors, ensuring solutions that truly fit your business needs."
     },
  
@@ -32,7 +32,7 @@ const WhyChooseSection = () => {
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             We combine industry expertise, innovative technology, and unwavering commitment 
-            to deliver HR solutions that drive your business forward.
+            to deliver HR solutions that drive your business way forward.
           </p>
         </div>
 
@@ -47,7 +47,7 @@ const WhyChooseSection = () => {
                 <div className="p-4 bg-corporate-blue/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 group-hover:bg-corporate-blue/20 transition-colors">
                   <advantage.icon className="h-10 w-10 text-corporate-blue" />
                 </div>
-                <h3 className="text-xl font-bold text-corporate-grey-dark mb-4 group-hover:text-corporate-blue transition-colors">
+                <h3 className="text-xl whitespace-nowrap font-bold text-corporate-grey-dark mb-4 group-hover:text-corporate-blue transition-colors">
                   {advantage.title}
                 </h3>
                 <p className="text-gray-600 leading-relaxed">

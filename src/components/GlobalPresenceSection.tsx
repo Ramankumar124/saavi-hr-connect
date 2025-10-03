@@ -98,7 +98,7 @@ const GlobalPresenceSection = () => {
                     <div className="flex items-center">
                       <MapPin className="h-5 w-5 text-yellow-400 mr-2" />
                       <span>
-                        Plot No E-253 , First Floor, Cabin No 107, Mohali
+                        Plot No E-253 , F.F, C.N 107, Phase VIII-B, Industrial Area, Mohali, Punjab
                       </span>
                     </div>
                     <div className="flex items-center">
@@ -109,8 +109,8 @@ const GlobalPresenceSection = () => {
                 </div>
                 <div className="text-center">
                   <div className="inline-block p-8 bg-white/10 rounded-2xl backdrop-blur-sm">
-                    <Building2 className="h-24 w-24 text-yellow-400 mx-auto mb-4" />
-                    <h4 className="text-xl font-bold mb-2">Central Command</h4>
+                    <img className="h-32 w-32 text-yellow-400 mx-auto mb-4"  src="./head.png"/>
+                    <h4 className="text-xl font-bold mb-2">Command Office</h4>
                     <p className="text-white/90">
                       Coordinating excellence across India
                     </p>

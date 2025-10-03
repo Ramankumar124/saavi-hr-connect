@@ -23,7 +23,7 @@ const HeroSection = () => {
             </h1>
 
             <p className="text-lg   mb-8 max-w-xl leading-relaxed">
-              Empowering businesses across India with comprehensive HR
+              Empowering business across India with comprehensive HR
               outsourcing, recruitment excellence, and strategic workforce
               solutions
             </p>
@@ -77,7 +77,7 @@ const HeroSection = () => {
                   Employees Placed
                 </h4>
                 <p className="text-gray-600 text-sm">
-                  Successfully placed across various industries
+                  Successfully placed across various industries.
                 </p>
               </div>
             </div>
@@ -94,10 +94,10 @@ const HeroSection = () => {
                   5000+
                 </h3>
                 <h4 className="text-lg font-semibold text-gray-900 mb-2">
-                  Target by 2025
+                  Target by FY 2026
                 </h4>
                 <p className="text-gray-600 text-sm">
-                  Ambitious growth plan for workforce expansion
+                  Ambitious growth plan for workforce expansion.
                 </p>
               </div>
             </div>
@@ -117,7 +117,7 @@ const HeroSection = () => {
                   Presence
                 </h4>
                 <p className="text-gray-600 text-sm">
-                  Nationwide coverage across all major cities
+                  Nationwide coverage across all major cities.
                 </p>
               </div>
             </div>

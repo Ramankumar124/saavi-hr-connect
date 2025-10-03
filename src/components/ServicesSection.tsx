@@ -63,7 +63,7 @@ const ServicesSection = () => {
             Our Comprehensive Services
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            From recruitment to compliance, we provide end-to-end HR solutions 
+            From recruitment to compliance like wise, We provide end-to-end HR solutions 
             tailored to your business needs across India.
           </p>
         </div>
@@ -103,7 +103,7 @@ const ServicesSection = () => {
           ))}
         </div>
 
-        {/* CTA Section */}
+        {/* CTA Section
         <div className="text-center mt-16">
           <div className="bg-gradient-to-r from-corporate-blue/5 to-corporate-accent/5 rounded-2xl p-8">
             <h3 className="text-2xl font-bold text-corporate-grey-dark mb-4">
@@ -121,7 +121,7 @@ const ServicesSection = () => {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

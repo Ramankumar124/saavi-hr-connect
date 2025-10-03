@@ -26,8 +26,8 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-300 leading-relaxed">
-              India's fastest growing HR solutions partner, empowering
-              businesses with comprehensive workforce management and recruitment
+              India's fastest growing HR solutions partner, empowering business
+              with comprehensive workforce management and recruitment
               excellence.
             </p>
             <div className="flex space-x-4">
@@ -80,7 +80,7 @@ const Footer = () => {
                   Our Clients
                 </a>
               </li>
-          
+
               <li>
                 <a
                   href="#presence"

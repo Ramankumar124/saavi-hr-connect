@@ -11,8 +11,9 @@ const AboutSection = () => {
             About Saavi HR Business Solutions
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            A leading HR outsourcing and recruitment firm with PAN-India presence, 
-            dedicated to transforming businesses through strategic workforce solutions.
+            A leading HR outsourcing and recruitment firm with PAN-India
+            presence, dedicated to transforming business through strategic
+            workforce solutions.
           </p>
         </div>
 
@@ -24,12 +25,18 @@ const AboutSection = () => {
                 <div className="p-3 bg-corporate-blue/10 rounded-lg mr-4">
                   <Target className="h-8 w-8 text-corporate-blue" />
                 </div>
-                <h3 className="text-2xl font-bold text-corporate-grey-dark">Our Mission</h3>
+                <h3 className="text-2xl font-bold text-corporate-grey-dark">
+                  Our Mission
+                </h3>
               </div>
               <p className="text-lg text-gray-600 leading-relaxed">
-                To achieve a <span className="font-semibold text-corporate-blue">5000+ Manpower base by 2025</span>, 
-                providing comprehensive HR solutions that empower businesses to focus on their core competencies 
-                while we handle their workforce management needs with excellence and innovation.
+                To achieve a{" "}
+                <span className="font-semibold text-corporate-blue">
+                  5000+ Manpower strength  by FY 2026
+                </span>
+                , providing comprehensive HR solutions that empower business to
+                focus on their core competencies, While we handle their workforce
+                management needs with excellence and innovation.
               </p>
             </CardContent>
           </Card>
@@ -40,24 +47,32 @@ const AboutSection = () => {
                 <div className="p-3 bg-corporate-accent/10 rounded-lg mr-4">
                   <Eye className="h-8 w-8 text-corporate-accent" />
                 </div>
-                <h3 className="text-2xl font-bold text-corporate-grey-dark">Our Vision</h3>
+                <h3 className="text-2xl font-bold text-corporate-grey-dark">
+                  Our Vision
+                </h3>
               </div>
               <p className="text-lg text-gray-600 leading-relaxed">
-                To become <span className="font-semibold text-corporate-accent">India's top human resource provider</span>, 
-                setting industry standards through innovative solutions, ethical practices, and unwavering commitment 
-                to client success and employee satisfaction.
+                To become{" "}
+                <span className="font-semibold text-corporate-accent">
+                  India's top  Manpower providers
+                </span>
+                , Setting industrial standards through innovative solutions,
+                ethical practices, and unwavering commitment to meet client's expectations
+                and employee satisfaction.
               </p>
             </CardContent>
           </Card>
         </div>
 
-        {/* Key Highlights */}
+        {/* Key Highlights
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           <div className="text-center">
             <div className="p-4 bg-corporate-blue/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
               <Users className="h-10 w-10 text-corporate-blue" />
             </div>
-            <h4 className="text-2xl font-bold text-corporate-grey-dark mb-2">2000+</h4>
+            <h4 className="text-2xl font-bold text-corporate-grey-dark mb-2">
+              2000+
+            </h4>
             <p className="text-gray-600">Employees Placed Across India</p>
           </div>
 
@@ -65,7 +80,9 @@ const AboutSection = () => {
             <div className="p-4 bg-corporate-accent/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
               <Building2 className="h-10 w-10 text-corporate-accent" />
             </div>
-            <h4 className="text-2xl font-bold text-corporate-grey-dark mb-2">HQ Mohali</h4>
+            <h4 className="text-2xl font-bold text-corporate-grey-dark mb-2">
+              HQ Mohali
+            </h4>
             <p className="text-gray-600">Headquarters with National Reach</p>
           </div>
 
@@ -73,15 +90,15 @@ const AboutSection = () => {
             <div className="p-4 bg-corporate-blue-light/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
               <Target className="h-10 w-10 text-corporate-blue-light" />
             </div>
-            <h4 className="text-2xl font-bold text-corporate-grey-dark mb-2">2025 Goal</h4>
+            <h4 className="text-2xl font-bold text-corporate-grey-dark mb-2">
+              FY 2026 Goal
+            </h4>
             <p className="text-gray-600">5000+ Manpower Target</p>
           </div>
-        </div>
+        </div> */}
 
         {/* Management Section */}
-        <Card className="bg-gradient-to-r from-corporate-blue/5 to-corporate-accent/5">
-   
-        </Card>
+        {/* <Card className="bg-gradient-to-r from-corporate-blue/5 to-corporate-accent/5"></Card> */}
       </div>
     </section>
   );
