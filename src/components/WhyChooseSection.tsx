@@ -31,7 +31,7 @@ const WhyChooseSection = () => {
             Why Choose Saavi HR?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            We combine industry expertise, innovative technology, and unwavering commitment 
+            We combine industrial expertise, innovative technology, and unwavering commitment 
             to deliver HR solutions that drive your business way forward.
           </p>
         </div>
