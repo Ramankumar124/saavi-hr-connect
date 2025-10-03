@@ -1,66 +1,127 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Users, TrendingUp, MapPin } from "lucide-react";
-import heroImage from "@/assets/hero-bg.jpg";
+import { Users, Sun, Briefcase } from "lucide-react";
+import heroImage from "@/assets/hero-bg.png";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background with overlay */}
-      <div 
+    <section className="relative min-h-screen pt-24 pb-16 overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-r from-corporate-blue-dark/40 via-corporate-blue/ to-corporate-blue-light/40"></div>
-      </div>
-      
-      {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="animate-fade-in-up">
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            India’s Next-Gen
-            <span className="block bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">
-              HR Solutions Partner
-            </span>
-          </h1>
-          
-          <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Empowering businesses across India with comprehensive HR outsourcing, 
-            recruitment excellence, and strategic workforce solutions.
-          </p>
-          
-          {/* Stats */}
-          <div className="flex flex-wrap justify-center gap-8 mb-10 text-white">
-            <div className="flex items-center gap-2 animate-slide-in-right" style={{animationDelay: '0.2s'}}>
-              <Users className="h-6 w-6 text-yellow-400" />
-              <span className="text-lg font-semibold">2000+ Employees Placed</span>
+      ></div>
+
+      {/* Main Content Container */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2items-center">
+          {/* Left Content */}
+          <div className="animate-fade-in-up text-[#344256]">
+            <h1 className="text-5xl md:text-6xl lg:text-6xl font-semibold  mt-24 ">
+              India's Next-Gen
+              <br />
+              <span className=" ">HR Solutions Partner</span>
+            </h1>
+
+            <p className="text-lg   mb-8 max-w-xl leading-relaxed">
+              Empowering businesses across India with comprehensive HR
+              outsourcing, recruitment excellence, and strategic workforce
+              solutions
+            </p>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 mb-12">
+              <Button
+                className="bg-orange-500 hover:bg-orange-600 text-white text-lg px-8 py-6 rounded-lg font-semibold"
+                size="lg"
+                onClick={() => {
+                  document
+                    .getElementById("services")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                Explore Services
+              </Button>
+
+              <Button
+                variant="outline"
+                className="border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white text-lg px-8 py-6 rounded-lg font-semibold"
+                size="lg"
+                onClick={() => {
+                  document
+                    .getElementById("contact")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                Get in Touch
+              </Button>
             </div>
-            <div className="flex items-center gap-2 animate-slide-in-right" style={{animationDelay: '0.4s'}}>
-              <TrendingUp className="h-6 w-6 text-yellow-400" />
-              <span className="text-lg font-semibold">Target: 5000+ by 2025</span>
-            </div>
-            <div className="flex items-center gap-2 animate-slide-in-right" style={{animationDelay: '0.6s'}}>
-              <MapPin className="h-6 w-6 text-yellow-400" />
-              <span className="text-lg font-semibold">PAN-India Presence</span>
-            </div>
-          </div>
-          
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-scale-in" style={{animationDelay: '0.8s'}}>
-            <Button variant="corporate" size="lg" className="text-lg px-8 py-3">
-              Explore Services
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button variant="corporate-outline" size="lg" className="text-lg px-8 py-3">
-              Get in Touch
-            </Button>
           </div>
         </div>
-      </div>
-      
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-white/50 rounded-full mt-2 animate-pulse"></div>
+
+        {/* Stats Cards */}
+        <div
+          className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 animate-fade-in-up"
+          style={{ animationDelay: "0.3s" }}
+        >
+          {/* Card 1 - Employees Placed */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <Users className="h-6 w-6 text-orange-500" />
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-orange-500 mb-1">
+                  2000+
+                </h3>
+                <h4 className="text-lg font-semibold text-gray-900 mb-2">
+                  Employees Placed
+                </h4>
+                <p className="text-gray-600 text-sm">
+                  Successfully placed across various industries
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 2 - Growth Target */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <Briefcase className="h-6 w-6 text-orange-500" />
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-orange-500 mb-1">
+                  5000+
+                </h3>
+                <h4 className="text-lg font-semibold text-gray-900 mb-2">
+                  Target by 2025
+                </h4>
+                <p className="text-gray-600 text-sm">
+                  Ambitious growth plan for workforce expansion
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 3 - PAN-India Presence */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <Sun className="h-6 w-6 text-orange-500" />
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-orange-500 mb-1">
+                  PAN-India
+                </h3>
+                <h4 className="text-lg font-semibold text-gray-900 mb-2">
+                  Presence
+                </h4>
+                <p className="text-gray-600 text-sm">
+                  Nationwide coverage across all major cities
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
