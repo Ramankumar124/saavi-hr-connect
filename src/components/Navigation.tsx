@@ -16,8 +16,8 @@ const Navigation = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
-      <div className="max-w-7xl mx-auto ">
-        <div className="flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 sm:py-3 lg:py-4">
+        <div className="flex justify-between items-center gap-4">
           {/* Logo */}
           <Logo size="md" showText={true} />
 
@@ -51,27 +51,29 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="lg:hidden pb-4 border-t border-gray-200 pt-4">
+          <div className="lg:hidden pb-4 border-t border-gray-200 pt-4 mt-4">
             <div className="space-y-4">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
-                  className="block text-gray-700 hover:text-corporate-blue transition-colors font-medium"
+                  className="block text-gray-700 hover:text-corporate-blue transition-colors font-medium py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.name}
                 </a>
               ))}
               <div className="pt-4 border-t border-gray-200">
-                <div className="space-y-2 text-sm text-gray-600 mb-4">
+                <div className="space-y-3 text-sm text-gray-600 mb-4">
                   <div className="flex items-center">
-                    <Phone className="h-4 w-4 mr-2" />
-                    <span>+91 172 451 3879</span>
+                    <Phone className="h-4 w-4 mr-2 flex-shrink-0" />
+                    <span className="break-all">+91 172 451 3879</span>
                   </div>
                   <div className="flex items-center">
-                    <Mail className="h-4 w-4 mr-2" />
-                    <span>Business@saavihr.com</span>
+                    <Mail className="h-4 w-4 mr-2 flex-shrink-0" />
+                    <span className="break-all text-xs sm:text-sm">
+                      Business@saavihr.com
+                    </span>
                   </div>
                 </div>
                 <Button variant="corporate" size="sm" className="w-full">

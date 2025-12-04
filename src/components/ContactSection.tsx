@@ -6,39 +6,39 @@ import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-corporate-grey to-background">
+    <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-corporate-grey to-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-corporate-grey-dark mb-6">
+        <div className="text-center mb-10 sm:mb-12 lg:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-corporate-grey-dark mb-4 sm:mb-6 px-2">
             Get in Touch
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-2">
             Ready to transform your HR operations? Contact our experts today for
             a personalized consultation and discover how we can help your
             business grow.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12">
           {/* Contact Information */}
-          <div className="space-y-8">
+          <div className="space-y-6 sm:space-y-8">
             {/* HQ Contact */}
             <Card className="border-0 bg-white shadow-card">
               <CardHeader>
-                <CardTitle className="flex items-center text-corporate-blue">
-                  <MapPin className="h-6 w-6 mr-2" />
+                <CardTitle className="flex items-center text-corporate-blue text-lg sm:text-xl">
+                  <MapPin className="h-5 w-5 sm:h-6 sm:w-6 mr-2" />
                   Head office - Mohali
                 </CardTitle>
               </CardHeader>
-              <CardContent className="space-y-4">
+              <CardContent className="space-y-3 sm:space-y-4">
                 <div className="flex items-start">
-                  <MapPin className="h-5 w-5 text-gray-400 mr-3 mt-1" />
+                  <MapPin className="h-4 w-4 sm:h-5 sm:w-5 text-gray-400 mr-2 sm:mr-3 mt-1 flex-shrink-0" />
                   <div>
-                    <p className="font-medium text-corporate-grey-dark">
+                    <p className="font-medium text-corporate-grey-dark text-sm sm:text-base">
                       Address
                     </p>
-                    <p className="text-gray-600">
+                    <p className="text-gray-600 text-xs sm:text-sm">
                       Plot No E-253 , First Floor, Cabin No 107
                       <br />
                       Phase VIII-B, Industrial Area, Mohali, Punjab, 160055
@@ -46,37 +46,40 @@ const ContactSection = () => {
                   </div>
                 </div>
                 <div className="flex items-center">
-                  <Phone className="h-5 w-5 text-gray-400 mr-3" />
+                  <Phone className="h-4 w-4 sm:h-5 sm:w-5 text-gray-400 mr-2 sm:mr-3 flex-shrink-0" />
                   <div>
-                    <p className="font-medium text-corporate-grey-dark">
+                    <p className="font-medium text-corporate-grey-dark text-sm sm:text-base">
                       Phone
                     </p>
-                    <p className="text-gray-600">+91 172 451 3879</p>
+                    <p className="text-gray-600 text-xs sm:text-sm">
+                      +91 172 451 3879
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-center">
-                  <Mail className="h-5 w-5 text-gray-400 mr-3" />
+                  <Mail className="h-4 w-4 sm:h-5 sm:w-5 text-gray-400 mr-2 sm:mr-3 flex-shrink-0" />
                   <div>
-                    <p className="font-medium text-corporate-grey-dark">
+                    <p className="font-medium text-corporate-grey-dark text-sm sm:text-base">
                       Email
                     </p>
-                    <p className="text-gray-600">Business@saavihr.com</p>
+                    <p className="text-gray-600 text-xs sm:text-sm break-all">
+                      Business@saavihr.com
+                    </p>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-
             {/* Business Hours */}
             <Card className="border-0 bg-gradient-to-r from-corporate-blue/5 to-corporate-accent/5">
-              <CardContent className="p-6">
-                <div className="flex items-center mb-4">
-                  <Clock className="h-6 w-6 text-corporate-blue mr-2" />
-                  <h3 className="text-xl font-bold text-corporate-grey-dark">
+              <CardContent className="p-5 sm:p-6">
+                <div className="flex items-center mb-3 sm:mb-4">
+                  <Clock className="h-5 w-5 sm:h-6 sm:w-6 text-corporate-blue mr-2" />
+                  <h3 className="text-lg sm:text-xl font-bold text-corporate-grey-dark">
                     Business Hours
                   </h3>
                 </div>
-                <div className="space-y-2 text-gray-600">
+                <div className="space-y-2 text-gray-600 text-sm sm:text-base">
                   <div className="flex justify-between">
                     <span>Monday - Friday:</span>
                     <span className="font-medium">9:00 AM - 6:00 PM</span>
@@ -89,8 +92,8 @@ const ContactSection = () => {
                     <span>Sunday:</span>
                     <span className="font-medium">Closed</span>
                   </div>
-                  <div className="mt-4 p-3 bg-corporate-blue/10 rounded-lg">
-                    <p className="text-sm text-corporate-blue font-medium">
+                  <div className="mt-3 sm:mt-4 p-2.5 sm:p-3 bg-corporate-blue/10 rounded-lg">
+                    <p className="text-xs sm:text-sm text-corporate-blue font-medium">
                       📞 24/7 Emergency Support Available
                     </p>
                   </div>
@@ -102,16 +105,16 @@ const ContactSection = () => {
           {/* Contact Form */}
           <Card className="border-0 bg-white shadow-elegant">
             <CardHeader>
-              <CardTitle className="text-2xl text-corporate-grey-dark">
+              <CardTitle className="text-xl sm:text-2xl text-corporate-grey-dark">
                 Send us a Message
               </CardTitle>
-              <p className="text-gray-600">
+              <p className="text-sm sm:text-base text-gray-600">
                 Fill out the form below and we'll get back to you within 24
                 hours.
               </p>
             </CardHeader>
-            <CardContent className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-4">
+            <CardContent className="space-y-4 sm:space-y-6">
+              <div className="grid md:grid-cols-2 gap-3 sm:gap-4">
                 <div>
                   <label className="block text-sm font-medium text-corporate-grey-dark mb-2">
                     First Name *
@@ -204,38 +207,54 @@ const ContactSection = () => {
         </div>
 
         {/* Quick Contact Options */}
-        <div className="grid md:grid-cols-3 gap-6 mt-16">
-          <div className="text-center p-6 bg-white rounded-xl shadow-card hover:shadow-elegant transition-shadow">
-            <Phone className="h-12 w-12 text-corporate-blue mx-auto mb-4" />
-            <h3 className="text-lg font-bold text-corporate-grey-dark mb-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mt-10 sm:mt-12 lg:mt-16">
+          <div className="text-center p-5 sm:p-6 bg-white rounded-xl shadow-card hover:shadow-elegant transition-shadow">
+            <Phone className="h-10 w-10 sm:h-12 sm:w-12 text-corporate-blue mx-auto mb-3 sm:mb-4" />
+            <h3 className="text-base sm:text-lg font-bold text-corporate-grey-dark mb-2">
               Call Us
             </h3>
-            <p className="text-gray-600 mb-4">
+            <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
               Speak directly with our HR experts
             </p>
-            <Button variant="corporate-outline" size="sm">
+            <Button
+              variant="corporate-outline"
+              size="sm"
+              className="text-xs sm:text-sm"
+            >
               +91 172 451 3879
             </Button>
           </div>
 
-          <div className="text-center p-6 bg-white rounded-xl shadow-card hover:shadow-elegant transition-shadow">
-            <Mail className="h-12 w-12 text-corporate-accent mx-auto mb-4" />
-            <h3 className="text-lg font-bold text-corporate-grey-dark mb-2">
+          <div className="text-center p-5 sm:p-6 bg-white rounded-xl shadow-card hover:shadow-elegant transition-shadow">
+            <Mail className="h-10 w-10 sm:h-12 sm:w-12 text-corporate-accent mx-auto mb-3 sm:mb-4" />
+            <h3 className="text-base sm:text-lg font-bold text-corporate-grey-dark mb-2">
               Email Us
             </h3>
-            <p className="text-gray-600 mb-4">Send us your requirements</p>
-            <Button variant="corporate-outline" size="sm">
+            <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
+              Send us your requirements
+            </p>
+            <Button
+              variant="corporate-outline"
+              size="sm"
+              className="text-xs sm:text-sm break-all"
+            >
               Business@saavihr.com
             </Button>
           </div>
 
-          <div className="text-center p-6 bg-white rounded-xl shadow-card hover:shadow-elegant transition-shadow">
-            <Clock className="h-12 w-12 text-corporate-blue-light mx-auto mb-4" />
-            <h3 className="text-lg font-bold text-corporate-grey-dark mb-2">
+          <div className="text-center p-5 sm:p-6 bg-white rounded-xl shadow-card hover:shadow-elegant transition-shadow">
+            <Clock className="h-10 w-10 sm:h-12 sm:w-12 text-corporate-blue-light mx-auto mb-3 sm:mb-4" />
+            <h3 className="text-base sm:text-lg font-bold text-corporate-grey-dark mb-2">
               Quick Response
             </h3>
-            <p className="text-gray-600 mb-4">We respond within 24 hours</p>
-            <Button variant="corporate-outline" size="sm">
+            <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
+              We respond within 24 hours
+            </p>
+            <Button
+              variant="corporate-outline"
+              size="sm"
+              className="text-xs sm:text-sm"
+            >
               Schedule Call
             </Button>
           </div>

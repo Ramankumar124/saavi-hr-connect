@@ -3,14 +3,14 @@ import { Target, Eye, Users, Building2 } from "lucide-react";
 
 const AboutSection = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-background to-corporate-grey">
+    <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-background to-corporate-grey">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-corporate-grey-dark mb-6">
+        <div className="text-center mb-10 sm:mb-12 lg:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-corporate-grey-dark mb-4 sm:mb-6 px-2">
             About Saavi HR Business Solutions
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-2">
             A leading HR outsourcing and recruitment firm with PAN-India
             presence, dedicated to transforming business through strategic
             workforce solutions.
@@ -18,47 +18,47 @@ const AboutSection = () => {
         </div>
 
         {/* Mission & Vision Cards */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 gap-6 sm:gap-8 mb-10 sm:mb-12 lg:mb-16">
           <Card className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2">
-            <CardContent className="p-8">
-              <div className="flex items-center mb-6">
-                <div className="p-3 bg-corporate-blue/10 rounded-lg mr-4">
-                  <Target className="h-8 w-8 text-corporate-blue" />
+            <CardContent className="p-5 sm:p-6 lg:p-8">
+              <div className="flex items-center mb-4 sm:mb-6">
+                <div className="p-2 sm:p-3 bg-corporate-blue/10 rounded-lg mr-3 sm:mr-4 flex-shrink-0">
+                  <Target className="h-6 w-6 sm:h-8 sm:w-8 text-corporate-blue" />
                 </div>
-                <h3 className="text-2xl font-bold text-corporate-grey-dark">
+                <h3 className="text-xl sm:text-2xl font-bold text-corporate-grey-dark">
                   Our Mission
                 </h3>
               </div>
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <p className="text-sm sm:text-base lg:text-lg text-gray-600 leading-relaxed">
                 To achieve a{" "}
                 <span className="font-semibold text-corporate-blue">
-                  5000+ Manpower strength  by FY 2026
+                  5000+ Manpower strength by FY 2026
                 </span>
                 , providing comprehensive HR solutions that empower business to
-                focus on their core competencies, While we handle their workforce
-                management needs with excellence and innovation.
+                focus on their core competencies, While we handle their
+                workforce management needs with excellence and innovation.
               </p>
             </CardContent>
           </Card>
 
           <Card className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2">
-            <CardContent className="p-8">
-              <div className="flex items-center mb-6">
-                <div className="p-3 bg-corporate-accent/10 rounded-lg mr-4">
-                  <Eye className="h-8 w-8 text-corporate-accent" />
+            <CardContent className="p-5 sm:p-6 lg:p-8">
+              <div className="flex items-center mb-4 sm:mb-6">
+                <div className="p-2 sm:p-3 bg-corporate-accent/10 rounded-lg mr-3 sm:mr-4 flex-shrink-0">
+                  <Eye className="h-6 w-6 sm:h-8 sm:w-8 text-corporate-accent" />
                 </div>
-                <h3 className="text-2xl font-bold text-corporate-grey-dark">
+                <h3 className="text-xl sm:text-2xl font-bold text-corporate-grey-dark">
                   Our Vision
                 </h3>
               </div>
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <p className="text-sm sm:text-base lg:text-lg text-gray-600 leading-relaxed">
                 To become{" "}
                 <span className="font-semibold text-corporate-accent">
-                  India's top  Manpower providers
+                  India's top Manpower providers
                 </span>
                 , Setting industrial standards through innovative solutions,
-                ethical practices, and unwavering commitment to meet client's expectations
-                and employee satisfaction.
+                ethical practices, and unwavering commitment to meet client's
+                expectations and employee satisfaction.
               </p>
             </CardContent>
           </Card>
