@@ -1,73 +1,140 @@
-# Welcome to your Lovable project
+# Saavi HR Business Solutions - Corporate Website
 
-## Project info
+![Saavi HR Logo](public/logo.png)
 
-**URL**: https://lovable.dev/projects/bd267165-f8d1-4690-959c-87ff27967ee6
+## 🏢 About
 
-## How can I edit this code?
+Official website for **Saavi HR Business Solutions Pvt. Ltd.** - India's fastest growing HR solutions partner, providing comprehensive workforce management and recruitment excellence across the nation.
 
-There are several ways of editing your application.
+**Website**: [https://saavihr.com](https://saavihr.com)
 
-**Use Lovable**
+## 🎯 Company Overview
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/bd267165-f8d1-4690-959c-87ff27967ee6) and start prompting.
+- **Mission**: Achieve 5000+ manpower strength by FY 2026
+- **Vision**: Become India's top manpower provider
+- **Headquarters**: Mohali, Punjab
+- **Coverage**: PAN-India presence
+- **Contact**: Business@saavihr.com | +91 172 451 3879
 
-Changes made via Lovable will be committed automatically to this repo.
+## 💼 Services
 
-**Use your preferred IDE**
+- **Recruitment Services** - Temp staffing, permanent placement, executive search
+- **Payroll Outsourcing** - Complete payroll management with compliance
+- **Statutory Compliance** - PF, ESI, PT, LWF management
+- **Vendor Audit & Inspections** - Quality audits and compliance checks
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🛠️ Technologies Used
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+This modern, responsive website is built with:
 
-Follow these steps:
+- **React** - UI library
+- **TypeScript** - Type-safe development
+- **Vite** - Lightning-fast build tool
+- **Tailwind CSS** - Utility-first styling
+- **shadcn/ui** - High-quality component library
+- **React Query** - Server state management
+- **React Router** - Client-side routing
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or bun package manager
+
+### Installation
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Clone the repository
+git clone https://github.com/Ramankumar124/saavi-hr-connect.git
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Navigate to project directory
+cd saavi-hr-connect
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
+# or
+bun install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
+# or
+bun run dev
 ```
 
-**Edit a file directly in GitHub**
+The development server will start at `http://localhost:5173`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Build for Production
 
-**Use GitHub Codespaces**
+```sh
+# Create production build
+npm run build
+# or
+bun run build
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+# Preview production build
+npm run preview
+# or
+bun run preview
+```
 
-## What technologies are used for this project?
+## 📁 Project Structure
 
-This project is built with:
+```
+saavi-hr-connect/
+├── public/              # Static assets
+│   ├── logo.png        # Company logo & favicon
+│   ├── robots.txt      # SEO crawler rules
+│   ├── sitemap.xml     # Site structure for SEO
+│   └── manifest.json   # PWA manifest
+├── src/
+│   ├── components/     # React components
+│   │   ├── ui/        # shadcn/ui components
+│   │   ├── HeroSection.tsx
+│   │   ├── AboutSection.tsx
+│   │   ├── ServicesSection.tsx
+│   │   └── ...
+│   ├── pages/         # Page components
+│   ├── lib/           # Utilities
+│   └── hooks/         # Custom React hooks
+├── index.html         # Entry HTML with SEO meta tags
+└── package.json       # Dependencies & scripts
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🔍 SEO Features
 
-## How can I deploy this project?
+- ✅ Comprehensive meta tags (Open Graph, Twitter Cards)
+- ✅ Structured data (JSON-LD schema)
+- ✅ Sitemap.xml for search engines
+- ✅ Optimized robots.txt
+- ✅ Favicon and PWA manifest
+- ✅ Semantic HTML structure
+- ✅ Mobile-responsive design
+- ✅ Fast loading performance
 
-Simply open [Lovable](https://lovable.dev/projects/bd267165-f8d1-4690-959c-87ff27967ee6) and click on Share -> Publish.
+## 📱 Contact Information
 
-## Can I connect a custom domain to my Lovable project?
+**Saavi HR Business Solutions Pvt. Ltd.**
 
-Yes, you can!
+📍 **Address**: Plot No E-253, First Floor, Cabin No 107  
+Phase VIII-B, Industrial Area, Mohali, Punjab, 160055
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+📞 **Phone**: +91 172 451 3879  
+📧 **Email**: Business@saavihr.com
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+⏰ **Business Hours**:
+- Monday - Friday: 9:00 AM - 6:00 PM
+- Saturday: 9:00 AM - 2:00 PM
+- Sunday: Closed
+
+## 📄 License
+
+© 2024 Saavi HR Business Solutions Pvt. Ltd. All rights reserved.
+
+## 🤝 Contributing
+
+This is a proprietary corporate website. For inquiries or suggestions, please contact the development team.
+
+---
+
+**Built with ❤️ for Saavi HR Business Solutions**

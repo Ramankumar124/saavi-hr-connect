@@ -1,10 +1,93 @@
+import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
+import toast from "react-hot-toast";
 
 const ContactSection = () => {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    companyName: "",
+    email: "",
+    phone: "",
+    service: "",
+    message: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleInputChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const submitContactForm = async () => {
+    const API_ENDPOINT =
+      "https://script.google.com/macros/s/AKfycbxohxXroKfhh8yvT_Nb62zEq4SRjFWr9LQ0SpLUwFBipZeZ5QCHXkKkhoI7vxZA5huF9w/exec";
+
+    try {
+      const params = new URLSearchParams();
+      params.append("firstName", formData.firstName);
+      params.append("lastName", formData.lastName);
+      params.append("companyName", formData.companyName);
+      params.append("email", formData.email);
+      params.append("phone", formData.phone);
+      params.append("service", formData.service);
+      params.append("message", formData.message);
+
+      const response = await fetch(`${API_ENDPOINT}?${params.toString()}`, {
+        method: "GET",
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to submit form");
+      }
+
+      return await response.json();
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      throw error;
+    }
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      await submitContactForm();
+      toast.success("Thank you! Your message has been sent successfully.", {
+        duration: 4000,
+        position: "top-center",
+      });
+      setFormData({
+        firstName: "",
+        lastName: "",
+        companyName: "",
+        email: "",
+        phone: "",
+        service: "",
+        message: "",
+      });
+    } catch (error) {
+      toast.error("Failed to send message. Please try again.", {
+        duration: 4000,
+        position: "top-center",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-corporate-grey to-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -113,95 +196,132 @@ const ContactSection = () => {
                 hours.
               </p>
             </CardHeader>
-            <CardContent className="space-y-4 sm:space-y-6">
-              <div className="grid md:grid-cols-2 gap-3 sm:gap-4">
+            <CardContent>
+              <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+                <div className="grid md:grid-cols-2 gap-3 sm:gap-4">
+                  <div>
+                    <label className="block text-sm font-medium text-corporate-grey-dark mb-2">
+                      First Name *
+                    </label>
+                    <Input
+                      name="firstName"
+                      value={formData.firstName}
+                      onChange={handleInputChange}
+                      placeholder="Enter your first name"
+                      className="border-gray-300"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-corporate-grey-dark mb-2">
+                      Last Name *
+                    </label>
+                    <Input
+                      name="lastName"
+                      value={formData.lastName}
+                      onChange={handleInputChange}
+                      placeholder="Enter your last name"
+                      className="border-gray-300"
+                      required
+                    />
+                  </div>
+                </div>
+
                 <div>
                   <label className="block text-sm font-medium text-corporate-grey-dark mb-2">
-                    First Name *
+                    Company Name *
                   </label>
                   <Input
-                    placeholder="Enter your first name"
+                    name="companyName"
+                    value={formData.companyName}
+                    onChange={handleInputChange}
+                    placeholder="Enter your company name"
                     className="border-gray-300"
+                    required
                   />
                 </div>
+
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-medium text-corporate-grey-dark mb-2">
+                      Email Address *
+                    </label>
+                    <Input
+                      type="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      placeholder="Enter your email"
+                      className="border-gray-300"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-corporate-grey-dark mb-2">
+                      Phone Number *
+                    </label>
+                    <Input
+                      type="tel"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleInputChange}
+                      placeholder="Enter your phone number"
+                      className="border-gray-300"
+                      required
+                    />
+                  </div>
+                </div>
+
                 <div>
                   <label className="block text-sm font-medium text-corporate-grey-dark mb-2">
-                    Last Name *
+                    Service Required
                   </label>
-                  <Input
-                    placeholder="Enter your last name"
-                    className="border-gray-300"
-                  />
+                  <select
+                    name="service"
+                    value={formData.service}
+                    onChange={handleInputChange}
+                    className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-corporate-blue/20 focus:border-corporate-blue"
+                  >
+                    <option value="">Select a service</option>
+                    <option value="recruitment">Recruitment Services</option>
+                    <option value="payroll">Payroll Outsourcing</option>
+                    <option value="compliance">Statutory Compliance</option>
+                    <option value="training">Training & Development</option>
+                    <option value="consulting">HR Consulting</option>
+                    <option value="other">Other Services</option>
+                  </select>
                 </div>
-              </div>
 
-              <div>
-                <label className="block text-sm font-medium text-corporate-grey-dark mb-2">
-                  Company Name *
-                </label>
-                <Input
-                  placeholder="Enter your company name"
-                  className="border-gray-300"
-                />
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium text-corporate-grey-dark mb-2">
-                    Email Address *
+                    Message *
                   </label>
-                  <Input
-                    type="email"
-                    placeholder="Enter your email"
-                    className="border-gray-300"
+                  <Textarea
+                    name="message"
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    placeholder="Tell us about your requirements..."
+                    className="border-gray-300 min-h-[120px]"
+                    required
                   />
                 </div>
-                <div>
-                  <label className="block text-sm font-medium text-corporate-grey-dark mb-2">
-                    Phone Number *
-                  </label>
-                  <Input
-                    type="tel"
-                    placeholder="Enter your phone number"
-                    className="border-gray-300"
-                  />
-                </div>
-              </div>
 
-              <div>
-                <label className="block text-sm font-medium text-corporate-grey-dark mb-2">
-                  Service Required
-                </label>
-                <select className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-corporate-blue/20 focus:border-corporate-blue">
-                  <option value="">Select a service</option>
-                  <option value="recruitment">Recruitment Services</option>
-                  <option value="payroll">Payroll Outsourcing</option>
-                  <option value="compliance">Statutory Compliance</option>
-                  <option value="training">Training & Development</option>
-                  <option value="consulting">HR Consulting</option>
-                  <option value="other">Other Services</option>
-                </select>
-              </div>
+                <Button
+                  type="submit"
+                  variant="corporate"
+                  size="lg"
+                  className="w-full"
+                  disabled={isSubmitting}
+                >
+                  <Send className="h-5 w-5 mr-2" />
+                  {isSubmitting ? "Sending..." : "Send Message"}
+                </Button>
 
-              <div>
-                <label className="block text-sm font-medium text-corporate-grey-dark mb-2">
-                  Message *
-                </label>
-                <Textarea
-                  placeholder="Tell us about your requirements..."
-                  className="border-gray-300 min-h-[120px]"
-                />
-              </div>
-
-              <Button variant="corporate" size="lg" className="w-full">
-                <Send className="h-5 w-5 mr-2" />
-                Send Message
-              </Button>
-
-              <p className="text-sm text-gray-500 text-center">
-                By submitting this form, you agree to our privacy policy and
-                terms of service.
-              </p>
+                <p className="text-sm text-gray-500 text-center">
+                  By submitting this form, you agree to our privacy policy and
+                  terms of service.
+                </p>
+              </form>
             </CardContent>
           </Card>
         </div>
